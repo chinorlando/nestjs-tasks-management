@@ -21,9 +21,9 @@ GET {{hostname}}tasks/133
 DELETE {{hostname}}tasks/8
 ###
 
-PATCH {{hostname}}tasks/54528070-0dfe-11ec-80a1-4da13d28adce/status
+PATCH {{hostname}}tasks/2/status
 Content-Type: application/json
 
 {
-    "status": "invali"
+    "status": "done"
 }
