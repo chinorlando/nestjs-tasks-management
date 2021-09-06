@@ -24,16 +24,7 @@ export class TasksController {
     
   // }
 
-  @Get(':id')
-  getOne(@Param('id', ParseIntPipe) id: number): Promise<Task> {
-    return this.tasksService.getTaskById(id);
-  }
-
-  @Post()
-  @UsePipes(ValidationPipe)
-  createTask(@Body() createTasksDto: CreateTaskDto): Promise<Task>{
-    return this.tasksService.createTask(createTasksDto);
-  }
+  
 
   // @Delete(':id')
   // delete(@Param('id') id: string): void{
@@ -47,4 +38,21 @@ export class TasksController {
   // ): Task{
   //   return this.tasksService.updatePath(id, status);
   // }
+
+
+  @Get(':id')
+  getOne(@Param('id', ParseIntPipe) id: number): Promise<Task> {
+    return this.tasksService.getTaskById(id);
+  }
+
+  @Post()
+  @UsePipes(ValidationPipe)
+  createTask(@Body() createTasksDto: CreateTaskDto): Promise<Task>{
+    return this.tasksService.createTask(createTasksDto);
+  }
+
+  @Delete(':id')
+  delete(@Param('id', ParseIntPipe) id: number): Promise<any>{
+    return this.tasksService.deleteTask(id);
+  }
 }

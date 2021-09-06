@@ -83,4 +83,11 @@ export class TasksService {
   async createTask(createTaskDto: CreateTaskDto): Promise<Task>{
     return this.taskRepository.createTask(createTaskDto);
   }
+
+  async deleteTask(id: number): Promise<any>{
+    const result = await this.taskRepository.delete(id);
+    if (result.affected === 0) {
+      throw new NotFoundException(`Task whit this ID ${id} not found`);
+    }
+  }
 }

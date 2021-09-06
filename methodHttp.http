@@ -18,7 +18,7 @@ Content-Type: application/json
 GET {{hostname}}tasks/133
 ###
 
-DELETE {{hostname}}tasks/09da9850-0de7-11ec-9e34-c33fdba4a6d8
+DELETE {{hostname}}tasks/8
 ###
 
 PATCH {{hostname}}tasks/54528070-0dfe-11ec-80a1-4da13d28adce/status
