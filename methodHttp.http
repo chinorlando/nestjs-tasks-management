@@ -10,8 +10,8 @@ POST {{hostname}}tasks
 Content-Type: application/json
 
 {
-    "title": "nestjs",
-    "description": "coso"
+    "title": "Laragon",
+    "description": "Crea entornos de desarrollo"
 }
 ###
 
