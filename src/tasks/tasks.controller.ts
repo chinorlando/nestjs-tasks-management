@@ -64,4 +64,9 @@ export class TasksController {
   ): Promise<Task>{
     return this.tasksService.updateTaskStatus(id, status);
   }
+
+  @Get()
+  getTasks(@Query(ValidationPipe) filterDto: GetTaskFilterDto): Promise<Task[]> {
+    return this.tasksService.getTasks(filterDto);
+  }
 }

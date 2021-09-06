@@ -97,4 +97,8 @@ export class TasksService {
     await task.save();
     return task;
   }
+
+  async getTasks(filterDto: GetTaskFilterDto): Promise<Task[]>{
+    return await this.taskRepository.getTasks(filterDto);
+  }
 }

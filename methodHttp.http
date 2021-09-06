@@ -3,7 +3,7 @@
 {{hostname}}tasks
 ###
 
-GET {{hostname}}tasks?status=DOsNE&search=
+GET {{hostname}}tasks?status=DONE&search=ea
 ###
 
 POST {{hostname}}tasks
