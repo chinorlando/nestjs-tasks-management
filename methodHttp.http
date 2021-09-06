@@ -1,0 +1,29 @@
+@hostname = http://localhost:3000/
+
+{{hostname}}tasks
+###
+
+GET {{hostname}}tasks?status=DOsNE&search=
+###
+
+POST {{hostname}}tasks
+Content-Type: application/json
+
+{
+    "title": "nestjs",
+    "description": "coso"
+}
+###
+
+GET {{hostname}}tasks/b6ff2890-0de5-11ec-a2a9-39dd3caa49bd
+###
+
+DELETE {{hostname}}tasks/09da9850-0de7-11ec-9e34-c33fdba4a6d8
+###
+
+PATCH {{hostname}}tasks/54528070-0dfe-11ec-80a1-4da13d28adce/status
+Content-Type: application/json
+
+{
+    "status": "invali"
+}
