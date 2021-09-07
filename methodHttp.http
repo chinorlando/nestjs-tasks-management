@@ -33,9 +33,9 @@ Content-Type: application/json
 
 ### Authentication begin
 POST {{hostname}}auth/signup
-Content-Type: application/json
+Content-Type: application/json 
 
 {
     "username": "orlando",
-    "password": "aAssssss"
+    "password": "Aa1234@#"
 }
