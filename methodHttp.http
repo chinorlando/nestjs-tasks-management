@@ -1,3 +1,5 @@
+
+### Task begin
 @hostname = http://localhost:3000/
 
 {{hostname}}tasks
@@ -26,4 +28,14 @@ Content-Type: application/json
 
 {
     "status": "done"
+}
+### Task end
+
+### Authentication begin
+POST {{hostname}}auth/signup
+Content-Type: application/json
+
+{
+    "username": "orlando",
+    "password": "123456"
 }
